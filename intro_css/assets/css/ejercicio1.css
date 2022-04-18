@@ -1,57 +1,30 @@
-
-
-
-
+p{
+    font-family: sans-serif; /*tipo de letra*/
+    font-size: 30px;/*tamaño de letra*/
+    font-weight: 100;/*grososr de letra*/
+}
 
 .forma{
-
-    height: 100px;
-    width: 300px;
-}
-
-.borde{
-    border: 3px solid black;
-    /*
-    border-top: 3px solid green;
-    border-right: 3px solid red;
-    border-bottom: 3px solid black;
-    border-left: 3px solid blue;
-    */
-    text-align: center; /*centra a lo ancho*/
-    line-height: 100px; /*centra a lo alto*/
-}
-
-.forma2{
-    height: 100px;
-    width: 300px;
-}
-
-.borde2{
-    border: 3px solid black;
-    /*
-    border-top: 3px solid green;
-    border-right: 3px solid red;
-    border-bottom: 3px solid black;
-    border-left: 3px solid blue;
-    */
-    text-align: center; /*centra a lo ancho*/
-    line-height: 100px; /*centra a lo alto*/
-}
-
-.forma3{
     height: auto;
     width: auto;
 }
+.cuadro{
+    width: 600px;
+    height: 20px;
+    background-color: rgb(228, 84, 180);    
+} 
+
+.cuadro2{
+    width: 600px;
+    height: 20px;
+    background-color: rgb(240, 125, 18);
+    border: 1px solid black;
+    border-radius: 5px;
+} 
 
 .borde3{
     
-    border-left: 3px solid rgb(235, 21, 153);
-    
-}
-
-.forma4{
-    height: auto;
-    width: auto;
+    border-left: 3px solid rgb(241, 8, 8);    
 }
 
 .borde4{

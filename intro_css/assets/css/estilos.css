@@ -1,0 +1,77 @@
+/*selector universal*/
+*{
+   /* background-color: blue;*/
+}
+
+
+
+/*selector de etiqueta*/
+/*elemento HTML{
+
+}*/
+
+/*selector de clase*/
+
+body{
+    background-color: cornflowerblue;
+}
+.cuadro{
+    width: 100px;
+    height: 100px;
+    background-color: chartreuse;
+    border: 1px solid red;
+    border-radius: 10px;
+} 
+
+/* selector de ID*/
+#forma{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 255, 1);
+}
+
+/* !Important tiene la mayor jerarquia */
+
+
+.color{
+    background-color: aquamarine; 
+    
+} 
+
+.color{
+    background-color: blue; 
+    
+} 
+
+.color{
+    background-color: blueviolet; 
+    
+} 
+
+.color-texto{
+    color: rgb(255, 255, 255);
+    background-color: crimson;
+}
+
+.forma{
+    height: 100px;
+    width: 300px;
+}
+
+.borde{
+    border: 3px solid black;
+    /*
+    border-top: 3px solid green;
+    border-right: 3px solid red;
+    border-bottom: 3px solid black;
+    border-left: 3px solid blue;
+    */
+    text-align: center; /*centra a lo ancho*/
+    line-height: 100px; /*centra a lo alto*/
+}
+
+p{
+    font-family: cursive; /*tipo de letra*/
+    font-size: 48px;/*tamaño de letra*/
+    font-weight: 100;/*grososr de letra*/
+}

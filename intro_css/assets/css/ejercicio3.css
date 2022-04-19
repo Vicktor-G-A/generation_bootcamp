@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(181, 202, 241);
+}
+
+h1{
+    text-align: end;
+}
+
+span{
+    color: red;
+    font-family: "Comic Sans", cursive;
+}
+
+.texto{
+    font-family: monospace;
+    
+}

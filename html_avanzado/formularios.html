@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css propios -->
+    <link rel="stylesheet" href="assets/css/formularios.css">
+    <title>Formularios</title>
+</head>
+<body>
+    <!-- una etiqueta de formulario tiene los siguientes metodos < form action="" method="post">-->
+    <form>
+        <input type="text" placeholder="Nombre" required> <!-- en este nos pide que es necesario llenar el recuadro-->
+        <input type="text" placeholder="Apellido" size="18"> <!-- en eete nos pide llenar el recuadro y size nos da la cantidad de caracteres-->
+        <input type="text" minlength="6" maxlength="10"> <!-- value=""" en este el recuadro se llena automaticamente-->
+        <!--minlength y maxlength nos pone la cantidad de caracteres necesarios por introducir-->        
+        <input type="number" min="0" max="100" step="10"> <!-- este es para solo ingresar numeros su atributos son min y max para los valores de los numeros, step es para personalizar los pasos-->
+        <input type="date">        
+        <!--para fechas-->
+        <input type="month">
+        <input type="wook">
+        <input type="datetime=local">
+        <input type="time">
+        <!-- complementarios de fechas -->
+        <input type="password">
+        <!-- para pedir contraseñas -->
+        <input type="file">
+        <!-- para subir archivos -->
+        <input type="range" min="1" max="4">
+        <!-- para seleccionar un rango de valores, este igual tiene atrivutos como un minimo y un maximo con min y max -->
+        <input type="checkbox" value="Hola" checked>
+        <!-- para checar si izieron las cosas o no, este tiene un atributo que es checked que pone una plechita-->
+        <input type="radio" name="n1" value="1">
+        <input type="radio" name="n2" value="2">
+        <!-- igual que cheched pero no se puede borar, si agregas value="1" solo te deja marcar uno-->
+        <input type="email" required>
+        <!-- para pedir email-->
+        <input type="menu" size="1">
+        <option>Uno</option>
+        <option value="1">Dos</option>
+        <option value="2">tres</option>
+    </select>
+        <!-- este es realizar un menu -->
+        <textarea name="" id="" cols="10" rows="5"></textarea>
+        <!-- este nos da un area de texto -->
+        <input type="color" id="inputColor" value="#ff0000">
+        <!-- selector de color -->
+        <input type="reset" value="Limpiar">
+        <!-- para limpiar l formulario sin mandar nada. -->
+        <input type="submit" value="Mandar"> <!--nos permite enviar la informacion-->
+    </form>
+
+    <script>
+        const color = document.querySelector("#inputColor")
+        console.log(color)
+
+        color.addEventListener("change", function (e) {
+            document.body.style.backgroundColor = e.target.value;
+        })
+
+    </script>
+
+    <hr>
+    <h1>Formulario</h1>
+    <form class="formulario">
+        <div class="nombre">
+            <label class="acomodoLabel" for="">Nombre</label>
+            <input class="colorFondo" type="text" name="name" id="nombre" placeholder="Nombre">
+        </div>
+        <div class="apellido">
+            <label class="acomodoLabel" for="apellido">Apellido</label>
+            <input class="colorFondo" type="text" id="apellido" placeholder="Apellido">
+        </div>
+        <div class="password">
+            <label class="acomodoLabel" for="password">Contraseña</label>
+            <input class="colorFondo" type="password" id="password" required>
+        </div>
+        <div class="correo">
+            <label class="acomodoLabel" for="correo">Correo</label>
+            <input class="colorFondo" type="email" required id="correo">
+        </div>
+        <div class="enviar">
+            <input class="btm-enviar" type="submit" value="Enviar">
+            <!--<button type="submit"><img src="" alt="">Enviar</button> este es un boton con imagen -->
+        </div>
+    </form>
+
+</body>
+</html>

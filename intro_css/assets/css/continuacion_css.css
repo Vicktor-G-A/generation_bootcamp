@@ -1,0 +1,60 @@
+
+/*
+px
+fuente
+tamaño del body
+*/
+
+/*
+1200px - pc
+750px - tablet
+450px - celular
+*/
+
+/*
+unidades de medida relativas
+%
+Rem 1 = tamaño de px de nuestro navegador
+En tamaño de fuente del elemento padre
+*/
+
+*{
+    /*box-sizing: border-box;
+    margin: 0;*/
+    /* esta es una buena practica para poder recetear los estilos de los navegadores, para que todo tenga el tamaño indicado*/
+} 
+
+/*
+body{
+margin: 0;
+}*/
+
+.forma{
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    padding: 5px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.color{
+    background-color: blue;
+    border: 5px solid red;
+}
+
+p{
+    padding: 20px;
+    border: 2px solid black;
+    margin: 0;
+}
+
+a{
+    width: 50%;
+    padding: 10px;
+    border: 3px solid red;
+    display: block;/* este nos ayuda a cambiar el comportamiento de los elementos */
+    margin: 30px auto;
+    text-align: center;
+    margin-top: 50px;
+}

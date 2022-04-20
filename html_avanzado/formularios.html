@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,15 +9,18 @@
     <link rel="stylesheet" href="assets/css/formularios.css">
     <title>Formularios</title>
 </head>
+
 <body>
     <!-- una etiqueta de formulario tiene los siguientes metodos < form action="" method="post">-->
     <form>
         <input type="text" placeholder="Nombre" required> <!-- en este nos pide que es necesario llenar el recuadro-->
-        <input type="text" placeholder="Apellido" size="18"> <!-- en eete nos pide llenar el recuadro y size nos da la cantidad de caracteres-->
+        <input type="text" placeholder="Apellido" size="18">
+        <!-- en eete nos pide llenar el recuadro y size nos da la cantidad de caracteres-->
         <input type="text" minlength="6" maxlength="10"> <!-- value=""" en este el recuadro se llena automaticamente-->
-        <!--minlength y maxlength nos pone la cantidad de caracteres necesarios por introducir-->        
-        <input type="number" min="0" max="100" step="10"> <!-- este es para solo ingresar numeros su atributos son min y max para los valores de los numeros, step es para personalizar los pasos-->
-        <input type="date">        
+        <!--minlength y maxlength nos pone la cantidad de caracteres necesarios por introducir-->
+        <input type="number" min="0" max="100" step="10">
+        <!-- este es para solo ingresar numeros su atributos son min y max para los valores de los numeros, step es para personalizar los pasos-->
+        <input type="date">
         <!--para fechas-->
         <input type="month">
         <input type="wook">
@@ -40,7 +44,7 @@
         <option>Uno</option>
         <option value="1">Dos</option>
         <option value="2">tres</option>
-    </select>
+        </select>
         <!-- este es realizar un menu -->
         <textarea name="" id="" cols="10" rows="5"></textarea>
         <!-- este nos da un area de texto -->
@@ -48,37 +52,28 @@
         <!-- selector de color -->
         <input type="reset" value="Limpiar">
         <!-- para limpiar l formulario sin mandar nada. -->
-        <input type="submit" value="Mandar"> <!--nos permite enviar la informacion-->
+        <input type="submit" value="Mandar">
+        <!--nos permite enviar la informacion-->
     </form>
-
-    <script>
-        const color = document.querySelector("#inputColor")
-        console.log(color)
-
-        color.addEventListener("change", function (e) {
-            document.body.style.backgroundColor = e.target.value;
-        })
-
-    </script>
-
+    
     <hr>
     <h1>Formulario</h1>
-    <form class="formulario">
+    <form id="formularioDatos" class="formulario">
         <div class="nombre">
             <label class="acomodoLabel" for="">Nombre</label>
-            <input class="colorFondo" type="text" name="name" id="nombre" placeholder="Nombre">
+            <input class="colorFondo" type="text" name="nombre" id="nombre" placeholder="Nombre">
         </div>
         <div class="apellido">
             <label class="acomodoLabel" for="apellido">Apellido</label>
-            <input class="colorFondo" type="text" id="apellido" placeholder="Apellido">
+            <input class="colorFondo" type="text" name="apellido" id="apellido" placeholder="Apellido">
         </div>
         <div class="password">
             <label class="acomodoLabel" for="password">Contraseña</label>
-            <input class="colorFondo" type="password" id="password" required>
+            <input class="colorFondo" type="password" name="password" id="password" required>
         </div>
         <div class="correo">
             <label class="acomodoLabel" for="correo">Correo</label>
-            <input class="colorFondo" type="email" required id="correo">
+            <input class="colorFondo" type="email" name="correo" required id="correo">
         </div>
         <div class="enviar">
             <input class="btm-enviar" type="submit" value="Enviar">
@@ -86,5 +81,8 @@
         </div>
     </form>
 
+    <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>

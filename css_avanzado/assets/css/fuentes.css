@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2? familia=Montserrat+Suplentes:ital,wght@0.400;0.700;1.300&familia=Montserrat+Subrayada&display=swap');
+
+*{
+    /* font-family: 'Montserrat Alternates', sans-serif;  */
+    /* font-weight: 100;  */  
+}
+
+h1{
+    font-family: 'Montserrat Subrayada', sans-serif;
+    text-decoration: underline;
+}
+
+p{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 200;
+    text-decoration: underline;
+}

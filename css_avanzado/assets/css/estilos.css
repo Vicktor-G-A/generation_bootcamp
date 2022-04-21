@@ -22,7 +22,7 @@ right =Izquierda
 */
 
 h1{
-    /*position: relative;*/
+    position: relative;
     /*top: 100px;*/
     /*bottom: -20px;*/  
     /*z-index: -1;*/
